@@ -10,6 +10,7 @@ const webpack = require('webpack');
 const isDev = process.env.NODE_ENV === 'development';
 const API = process.env.api;
 
+
 module.exports = {
     entry: { main: './public/src/index.js' },
     output: {

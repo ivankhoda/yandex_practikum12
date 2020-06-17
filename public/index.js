@@ -1,4 +1,4 @@
-//import './index.css';
+//import './index.css'; менять
 import Card from "./js/Card.js";
 import CardList from "./js/CardList.js";
 import Popup from "./js/Popup.js";

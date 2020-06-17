@@ -12,5 +12,4 @@ routerToCards.get('/cards', (req, res) => {
 });
 
 
-
 module.exports = routerToCards;

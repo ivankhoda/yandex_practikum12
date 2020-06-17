@@ -10,6 +10,7 @@ app.listen(PORT, () => {
   console.log(`App listening on port ${PORT}`)
 });
 
+
 app.use(express.static(__dirname + '/public'));
 
 app.use('/', routeToCards, routeToUsers);
