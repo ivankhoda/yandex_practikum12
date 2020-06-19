@@ -2,17 +2,17 @@
   "name": "yandex_praktikum_sprint_12",
   "version": "0.0.1",
   "description": "YandexPraktikum practical work num.12",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "build": "cross-env NODE_ENV=production rimraf dist && webpack --mode production",
     "dev": "cross-env NODE_ENV=development webpack-dev-server --mode development --open --watch",
     "deploy": "cross-env NODE_ENV=production gh-pages -d dist",
     "start": "nodemon app.js",
-    
+    "lint": "eslint --fix --ext .js"
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/ivankhoda/yandex_practikum12"
   },
   "keywords": [],
   "author": "Ivan Khoda",
@@ -30,7 +30,6 @@
     "@babel/core": "^7.9.6",
     "@babel/polyfill": "^7.10.1",
     "@babel/preset-env": "^7.9.6",
-    "autoprefixer": "^9.8.0",
     "babel-loader": "^8.1.0",
     "cross-env": "^7.0.2",
     "css-loader": "^3.5.3",
@@ -53,6 +52,8 @@
     "webpack-md5-hash": "0.0.6"
   },
   "dependencies": {
-    "core-js": "^3.4.1"
+    "core-js": "^3.4.1",
+    "express": "^4.17.1",
+    "autoprefixer": "^9.8.0"
   }
 }
