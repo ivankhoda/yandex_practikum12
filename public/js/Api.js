@@ -1,4 +1,4 @@
-import { token, baseURL } from '../index.js';
+import { token, baseURL } from '../src/index.js';
 
 class Api {
   constructor(options) {
@@ -152,4 +152,4 @@ class Api {
       .catch((err) => Promise.reject(`Error: ${err.status}`));
   }
 }
-export { Api };
+export {Api}

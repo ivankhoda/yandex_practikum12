@@ -1,10 +1,10 @@
-// import './index.css'; менять
-import Card from './js/Card.js';
-import CardList from './js/CardList.js';
-import Popup from './js/Popup.js';
-import UserInfo from './js/UserInfo.js';
-import FormValidator from './js/FormValidator.js';
-import { Api } from './js/Api.js';
+import './index.css';
+import Card from '../js/Card.js';
+import CardList from '../js/CardList.js';
+import Popup from '../js/Popup.js';
+import UserInfo from '../js/UserInfo.js';
+import FormValidator from '../js/FormValidator.js';
+import {Api} from '../js/Api';
 
 const token = 'f22aff37-eb29-4584-988f-49dedb4638b8';
 const baseURL = 'http://praktikum.tk/cohort10';
