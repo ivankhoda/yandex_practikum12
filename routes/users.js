@@ -1,4 +1,5 @@
 /* eslint no-underscore-dangle: ["error", { "allow": ["_id"] }] */
+/* eslint array-callback-return: ["off"] */
 const routerToUsers = require('express').Router();
 const users = require('../data/users');
 
@@ -14,7 +15,7 @@ routerToUsers.get('/users/:id', (req, res) => {
   const { id } = req.params;
   let renderUser;
 
-  Object.values(users).forEach((user) => {
+  Object.values(users).find((user) => {
     if (user._id === id) {
       renderUser = user;
     }
