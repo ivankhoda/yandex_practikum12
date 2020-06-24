@@ -13,14 +13,7 @@ routerToUsers.get('/users', (req, res) => {
 
 routerToUsers.get('/users/:id', (req, res) => {
   const { id } = req.params;
-  let renderUser;
-
-  Object.values(users).find((user) => {
-    if (user._id === id) {
-      renderUser = user;
-    }
-  });
-
+  const renderUser = Object.values(users).find((user) => user._id === id);
   if (!renderUser) {
     res.status(404).send({ message: 'Нет пользователя с таким id' });
   }
