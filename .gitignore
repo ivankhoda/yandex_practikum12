@@ -13,3 +13,9 @@ node_modules
 .DS_Store
 .idea
 /public/dist/
+/dist/
+/src/
+.eslintrc.js
+/review.txt
+/review.txt
+/review.txt.zip
